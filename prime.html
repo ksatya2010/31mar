@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    
+    <title>printing of numbers</title>
+
+</head>
+<body>
+
+    <h1>print prime numbers between two numbers</h1>
+    <input type="number" id="number" name="" placeholder="1st value"/><br/><br/>
+    <button onclick="demo()">Check</button>   
+ <script>
+      function demo()
+    {
+     var num=document.getElementById("number").value;  
+       
+        for(var i=2;i<=num;i++){
+           
+         for(var j=2;j<=i;j++){   
+         if(i%j == 0)
+         {
+          break;
+         }
+        }
+        
+        if(i==j)
+        {
+         document.write(i+"<br>");
+        }
+              
+       }
+    }
+
+   
+   
+    </script>
+
+</body>
+</html>
